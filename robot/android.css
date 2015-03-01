@@ -1,0 +1,167 @@
+    
+	/* http://meyerweb.com/eric/tools/css/reset/ 
+	   v2.0 | 20110126
+	   License: none (public domain)
+	*/
+
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure, 
+	footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+	body {
+		line-height: 1;
+	}
+	ol, ul {
+		list-style: none;
+	}
+	blockquote, q {
+		quotes: none;
+	}
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+	}
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+	
+	
+	
+	
+	
+	
+	
+	.robot{ 
+        position: absolute; 
+        left: 500px; 
+        top: 200px; 
+    } 
+    /* head */ 
+    .head{ 
+        width: 336px; 
+        height: 300px; 
+        background: green; 
+        border-radius: 200px 200px 0 0; 
+        position: absolute; 
+        top: -170px; 
+    } 
+    .head:before, .head:after{ 
+        background: red; 
+        content: ''; 
+        width: 20px; 
+        height: 53px; 
+        position: absolute; 
+        top: 5px; 
+  
+    } 
+    .head:before{ 
+        -webkit-transform: translate(255px, 0px) rotate(30deg);  
+        -moz-transform:translate(255px, 0px) rotate(30deg);  
+        -o-transform:translate(255px, 0px) rotate(30deg);  
+    } 
+    .head:after{ 
+        -webkit-transform: translate(63px, 0px) rotate(-30deg); 
+        -moz-transform: translate(63px, 0px) rotate(-30deg); 
+        -o-transform: translate(63px, 0px) rotate(-30deg); 
+    } 
+    /* eyes */ 
+    .eyes:before, .eyes:after{ 
+        background: blue; 
+        content: ''; 
+        width: 10px; 
+        height: 35px; 
+        top: 68px; 
+        position: absolute; 
+        border-radius: 20px; 
+	    -webkit-animation: eyes-move 1s linear infinite normal;
+ 
+	 }
+
+	 @-webkit-keyframes eyes-move {
+	   0% { transform: rotate(0deg); }
+	   100% { transform: rotate(360deg); }
+    } 
+
+	
+	
+	
+    .eyes:before{ 
+        left: 78px; 
+    } 
+    .eyes:after{ 
+        right: 78px; 
+    } 
+    /* body */ 
+    .body{ 
+        width: 336px; 
+        height: 230px; 
+        background: orange; 
+        border-radius: 0px 0px 13px 13px; 
+        position: absolute; 
+	    transition: background-color 3s ease;
+	  }
+	 
+	  .body:hover {
+	    background-color:green;
+	  }
+	  
+	  
+    .body:before, .body:after{ 
+        background: yellow; 
+        content: ''; 
+        width: 75px; 
+        height: 122px; 
+        bottom: -122px; 
+        position: absolute; 
+        border-radius: 0 0 50px 50px; 
+   
+    } 
+    .body:before{ 
+        left: 68px; 
+    } 
+    .body:after{ 
+        right: 68px; 
+    } 
+    /* arms */ 
+    .arms:before, .arms:after{ 
+        background: yellow; 
+        content: ''; 
+        width: 150px; 
+        height: 30px; 
+        top:20px; 
+        position: absolute; 
+        border-radius: 40px; 
+    } 
+	
+	.arms:hover{	transform:rotate(35deg);} 
+   
+    .arms:before{ 
+        left: -20px; 
+		transform-origin:0% 50%;
+    } 
+    .arms:after{ 
+        right: -20px; 
+    } 
