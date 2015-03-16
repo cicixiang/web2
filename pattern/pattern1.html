@@ -11,27 +11,24 @@
 
 	lineWidth(1)
 
-	function triangle(size) {
+	function segment(size) {
+	  lineColor("#996999")
+	  rotate(75);
 	  forward(size);
-	  rotate(120);
-	  forward(size);
-	  rotate(120);
-	  forward(size);
-	  rotate(120);
+	  rotate(75);
+	  lineColor("#BBB666");
+	  forward(size/2);
+	  rotate(75);
+	  lineColor("yellow");
+	  forward(size/3);
+	  rotate(75);
+	  lineColor("pink");
+	  forward(size/4);
+	 
 	}
 
-	for(var r = -10; r < 150; r++) {
-	  for(var c =  0;  c < 60; c++) {
-	    lineWidth(5);
-	    lineColor("#BBB")
-	    angle(170);
-	    forward(800);
-  
-	    lineWidth(1);
-
-	    angle(45);
-	    forward(1000);
-	  }
+	for(var x = 0;x < 450; x++){ 
+	  segment(x);  
 	}
 	</script>
 	

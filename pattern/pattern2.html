@@ -1,0 +1,51 @@
+<html>
+<body>
+	
+	
+	<script src='http://cykod.github.io/Logoish/logoish.js'></script>
+	<script>
+	Logoish.init();
+
+	speed(0);
+
+	
+
+	function star(size) {
+		lineWidth(1);
+		lineColor("#BBB");
+		forward(size);
+		rotate(-36);
+	  
+		lineWidth(2)
+		lineColor("green");
+		forward(size);
+		rotate(-36);
+	  
+		lineWidth(1);
+		lineColor("red");
+		forward(size);
+		rotate(-36);
+		
+		lineWidth(2);
+		lineColor("yellow")；
+		forward(size);
+		rotate(-36);
+		
+		lineWidth(1);
+		lineColor("pink");
+		forward(size);
+		rotate(-36);
+		
+	}
+
+	for(var x = 0; x < 200; x++) {
+	  for(var y = 0; y < 200; y++) {
+	    moveTo(x*16, y*16);
+	    star(10);
+	  }
+	}
+	</script>
+	
+	
+</body>
+</html>
