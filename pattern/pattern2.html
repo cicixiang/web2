@@ -1,51 +1,32 @@
-<html>
-<body>
-	
-	
+<html><body>
 	<script src='http://cykod.github.io/Logoish/logoish.js'></script>
 	<script>
 	Logoish.init();
 
 	speed(0);
 
-	
+	lineWidth(1);
 
-	function star(size) {
-		lineWidth(1);
-		lineColor("#BBB");
-		forward(size);
-		rotate(-36);
-	  
-		lineWidth(2)
-		lineColor("green");
-		forward(size);
-		rotate(-36);
-	  
-		lineWidth(1);
-		lineColor("red");
-		forward(size);
-		rotate(-36);
-		
-		lineWidth(2);
-		lineColor("yellow")；
-		forward(size);
-		rotate(-36);
-		
-		lineWidth(1);
-		lineColor("pink");
-		forward(size);
-		rotate(-36);
-		
-	}
 
-	for(var x = 0; x < 200; x++) {
-	  for(var y = 0; y < 200; y++) {
-	    moveTo(x*16, y*16);
-	    star(10);
-	  }
-	}
+
+		function basic(size) {
+		  forward(size*3);
+		  lineColor("#F9966B")
+		  rotate(130);
+		  forward(size*3);
+		  rotate(130);
+		  forward(size*5);
+		  lineColor("#E55B3C")
+		  rotate(130);
+		  forward(size*8);
+		  rotate(130);
+		}
+
+		
+		for(var r = -10; r < 500; r++) 
+		  for(var c =  0;  c < 20; c++){
+			  basic(r);
+		  }
+
 	</script>
-	
-	
-</body>
-</html>
+</body></html>
