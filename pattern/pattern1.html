@@ -1,0 +1,39 @@
+<html>
+<head>
+</head>
+<body>
+
+	<script src='http://cykod.github.io/Logoish/logoish.js'></script>
+	<script>
+	Logoish.init();
+
+	speed(0);
+
+	lineWidth(1)
+
+	function triangle(size) {
+	  forward(size);
+	  rotate(120);
+	  forward(size);
+	  rotate(120);
+	  forward(size);
+	  rotate(120);
+	}
+
+	for(var r = -10; r < 150; r++) {
+	  for(var c =  0;  c < 60; c++) {
+	    lineWidth(5);
+	    lineColor("#BBB")
+	    angle(170);
+	    forward(800);
+  
+	    lineWidth(1);
+
+	    angle(45);
+	    forward(1000);
+	  }
+	}
+	</script>
+	
+</body>
+</html>
