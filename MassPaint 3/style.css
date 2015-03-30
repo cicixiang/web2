@@ -12,3 +12,5 @@ body, html { padding:0px; margin:0px; }
 .buttons button.selected {
   background-color:gray;
 }
+
+.button-red {background-color:red;}

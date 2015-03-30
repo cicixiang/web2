@@ -80,6 +80,33 @@ $("#button-trunk").on("click",function() {
  tool = "trunk";
 });
 
+$("#button-black").on("click",function() {
+ $(".tool.selected").addClass("selected");
+ lineColor("black");
+});
+
+$("#button-red").on("click",function() {
+ $(".tool.selected").addClass("selected");
+ lineColor("red");
+});
+
+$("#button-small").on("click",function() {
+	$(".tool.selected").addClass("selected");
+ lineWidth(2);
+});
+
+$("#button-large").on("click",function() {
+ $(".tool.selected").addClass("selected");
+ lineWidth(40);
+});
+
+
+
+$(".color").on("click",function(e) {
+  var col = $(this).data("color");
+  lineColor(col);
+});
+
 
 function sun() {
 	//arc(e.pageX, e.pageY, 10, 0, 360, true);
@@ -100,7 +127,7 @@ var width = 4;
 $(document).on("mousedown",function(e) {
   e.preventDefault();
   moveTo(e.pageX,e.pageY);
-  if(tool == "pen" || tool =="eraser" || tool =="brush" || tool == "sea" || tool == "beach" || tool == "tree" || tool == "trunk" ) { 
+  if(tool == "pen" || tool =="eraser" || tool =="brush" || tool == "sea" || tool == "beach" || tool == "tree" || tool == "trunk" || tool=="black"|| tool=="red") { 
 	  drawing = true;
   } else if(tool == "sun") {
     sun();
