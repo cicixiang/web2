@@ -36,6 +36,9 @@ function drawImages(data){
 	var item = data.data[6];
 	console.log(item);
 	
-	var image = item.scsdcsdcs;
-	console.log(image);
+	var images = item.images.thumbnail.url;
+	console.log(images);
+	
+	var comment = item.comment.data.text;
+	console.log(comment);
 }
