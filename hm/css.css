@@ -62,6 +62,7 @@ h1{
 	font-family: helvetica;
 	color:black;
 	padding:1.25em;
+	padding-left:0;
 }
 
 img{
@@ -70,23 +71,7 @@ img{
 	margin-left:2em;
 }
 
-.first{
-	background-color:#CC6699;
-	padding:2em;
-	
-}
-.second{
-	background-color:#FFFFCC;
-	padding:2em;
-}
-.third{
-	background-color:#CC6699;
-	padding:2em;
-}
-.fourth{
-	background-color:#FFFFCC;
-	padding:2em;
-}
+
 
 span{
 	float:right;
@@ -96,5 +81,10 @@ span{
 	padding-top:1em;
 	
 	
+}
+
+#container{
+	background-color:white;
+	padding:2em;
 }
 
