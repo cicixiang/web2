@@ -33,7 +33,7 @@ addImage("http://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s150x150/e15
 
 
 function drawImages(data){
-	var item = data.data[6];
+	var item = data.data[9];
 	console.log(item);
 	
 	var images = item.images.thumbnail.url;
