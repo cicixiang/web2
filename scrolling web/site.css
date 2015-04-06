@@ -1,0 +1,219 @@
+/* Meyer Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+body{
+	width:100%;
+}
+
+/************traintable***********/
+
+
+
+
+
+
+p	{font-size:0.9em;
+   font-family: 'Lato', sans-serif;
+   color:blue;
+   text-decoration:none;
+   line-height:1.3em;
+   text-align:center;}
+
+h1{font-size:1.2em;
+   font-family: 'Lato', sans-serif;
+   color:blue;
+   text-decoration:none;
+   line-height:1.2em;
+   text-align:center;
+   	
+   }
+
+
+
+/************1***********/
+.firstwrapper{
+	background-color:#FFFFFF;
+	width: 100%;
+	height:50em;
+	z-index:100;
+}
+
+.secondwrapper{background-color:#A6B2B2;
+	width: 100%;
+	height:50em;
+	z-index:100;
+}
+.thirdwrapper{
+	background-color:#567F4E;
+	width: 100%;
+	height:50em;
+	z-index:100;
+}
+
+.fourthwrapper{background-color:#FFFFFF;
+	width: 100%;
+	height:50em;
+	z-index:100;
+}
+.fifthwrapper{background-color:#567F4E;
+	width: 100%;
+	height:50em;
+	z-index:100;
+}
+
+
+
+.cloud{
+	width:100%;
+	float:left;
+	margin-left:1.25em;
+	margin-top:-6.25em;
+	z-index:0;
+}
+.little_monster{
+	clear: both;
+	width:100%;
+	position:absolute;
+	margin-top:-12.5em;
+	z-index:100;
+}
+
+.pm25{
+	width:80%;
+	position:absolute;
+	margin-left:-12.5em;
+	margin-top:0em;
+	z-index:100;
+}
+
+
+
+.P1{
+	position:absolute;
+	margin:20em 45em;
+	width:26em;
+	z-index:100;
+}
+  
+  
+  
+  
+/************2***********/
+
+.bigmonster{
+	width:103%;
+	position:absolute;
+	margin-left:12em;
+	margin-top:-5em;
+	z-index:0;
+}
+.pm25_2{
+	width:80%;
+	position:absolute;
+	margin-left:-12.5em;
+	margin-top:0em;
+	z-index:100;
+	
+}
+
+.P2{
+	position:absolute;
+	margin:26.5em 42em;
+	width:23em;
+	z-index:100;
+}
+
+/************3***********/
+
+.lung{
+	width:90%;
+	position:absolute;
+	margin-left:-13em;
+	margin-top:-3em;
+	z-index:0;}
+
+.pm25_3{
+	width:50%;
+	position:absolute;
+	margin-left:-7.5em;
+	margin-top:18em;
+	z-index:100;
+	
+}
+
+.chart3{
+	width:100%;
+	position:absolute;
+	margin-left:19em;
+	margin-top:-2em;
+	z-index:0;
+	
+	
+}
+
+.P3{
+	position:absolute;
+	margin:20em 46em;
+	width:24em;
+	z-index:100;
+}
+
+/************4***********/
+
+
+.car{
+	width:110%;
+	position:absolute;
+	margin-left:-15em;
+	margin-top:0em;
+	z-index:0;}
+	
+}
