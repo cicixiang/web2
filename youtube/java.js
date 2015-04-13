@@ -1,18 +1,21 @@
-function addVideo(video) {
-  
  
+function showModal(video){
+		$(".modal").empty();
+	
   var title = video.snippet.title;
-  var thumbnail = video.snippet.thumbnails.default.url;
+  var thumbnail = video.snippet.description;
   
-  console.log(title);
-  console.log(thumbnail);
-  
-  var $div = $("<div>");
+  var $div = $("<div>"),addClass("video");
   
   var $title = $("<h4>").text(title);
-  var $image = $("<img>").attr("src",thumbnail);
+  var $image = $("<p>").text(description);
   
-  $div.append($image).append($title);
+  $div.append($image).append($description);
+  
+  $(".modal").append($div);
+  $(".overlay").show();
+  $(".modal").show();
+  
   
   $(".container").append($div);
   
@@ -28,3 +31,11 @@ function addVideo(video) {
   
   
 }
+
+
+function hideModal(video) {
+  $(".overlay").hide();
+  $(".modal").hide();
+}
+
+
