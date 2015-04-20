@@ -62,14 +62,14 @@ body{
 
 p	{font-size:0.9em;
    font-family: 'Lato', sans-serif;
-   color:blue;
+   color:white;
    text-decoration:none;
    line-height:1.3em;
    text-align:center;}
 
 h1{font-size:1.2em;
    font-family: 'Lato', sans-serif;
-   color:blue;
+   color:teal;
    text-decoration:none;
    line-height:1.2em;
    text-align:center;
@@ -111,26 +111,44 @@ h1{font-size:1.2em;
 
 
 
-.cloud{
+.bimg1{
 	width:100%;
 	float:left;
 	margin-left:1.25em;
 	margin-top:-6.25em;
 	z-index:0;
 }
-.little_monster{
-	clear: both;
+
+.bimg3{
 	width:100%;
-	position:absolute;
-	margin-top:-12.5em;
-	z-index:100;
+	float:left;
+	margin-top:-6.25em;
+	z-index:0;
 }
+
+.bimg4{
+	width:100%;
+	float:left;
+	margin-left:1.25em;
+	margin-top:-6.25em;
+	z-index:0;
+}
+
+.bimg5{
+	width:102%;
+	float:left;
+	margin-left:1.25em;
+	margin-top:-6.25em;
+	z-index:0;
+}
+
+
 
 .pm25{
 	width:80%;
 	position:absolute;
-	margin-left:-12.5em;
-	margin-top:0em;
+	margin-left:-92em;
+	margin-top:4em;
 	z-index:100;
 }
 
@@ -149,59 +167,30 @@ h1{font-size:1.2em;
 /************2***********/
 
 .bigmonster{
-	width:103%;
-	position:absolute;
-	margin-left:12em;
-	margin-top:-5em;
+	width:108%;
+	margin-left:10em;
+	margin-top:-15em;
 	z-index:0;
 }
-.pm25_2{
-	width:80%;
-	position:absolute;
-	margin-left:-12.5em;
-	margin-top:0em;
-	z-index:100;
-	
-}
+
 
 .P2{
-	position:absolute;
 	margin:26.5em 42em;
+	margin-top:-33em;
 	width:23em;
 	z-index:100;
 }
 
 /************3***********/
 
-.lung{
-	width:90%;
-	position:absolute;
-	margin-left:-13em;
-	margin-top:-3em;
-	z-index:0;}
 
-.pm25_3{
-	width:50%;
-	position:absolute;
-	margin-left:-7.5em;
-	margin-top:18em;
-	z-index:100;
-	
-}
 
-.chart3{
-	width:100%;
-	position:absolute;
-	margin-left:19em;
-	margin-top:-2em;
-	z-index:0;
 	
-	
-}
+
 
 .P3{
 	position:absolute;
-	margin:20em 46em;
+	margin:18em 48em;
 	width:24em;
 	z-index:100;
 }
@@ -212,8 +201,23 @@ h1{font-size:1.2em;
 .car{
 	width:110%;
 	position:absolute;
-	margin-left:-15em;
+	margin-left:-110em;
 	margin-top:0em;
 	z-index:0;}
 	
 }
+
+.P4 {position:absolute;
+margin:20em 45em;
+width:26em;
+z-index:100;
+}
+
+/************4***********/
+
+.P5 {position:absolute;
+margin:20em 45em;
+width:26em;
+z-index:100;
+}
+
