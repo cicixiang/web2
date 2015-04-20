@@ -1,68 +1,116 @@
-<!DOCTYPE html>
+<html lang="en">
+
 <head>
-	<title>PM 2.5</title>
-	<link rel="stylesheet" href="site.css" type="text/css" media="screen" />
+	<meta charset="UTF-8">
+	<title>The harm of PM 2.5</title>
+	<link rel="stylesheet" href="style.css" />
+	<script src="https://code.jquery.com/jquery-2.1.3.js"></script>
+	<script src="scroll_flight.js"></script>
 </head>
 
 <body>
 	
-	
-	<div id="PM25" style="position:fixed; width:108%; visibility:visible; margin-left:-5em; margin-top:50em；border: 0px;">
-		<iframe width=100%  height=400  src="site_img/pm2.5.png" frameborder=auto scrolling="yes">
-		</iframe>
+<!-- PM 2.5 -->	
+	<div id="PM25" class="PM25">
+		<img src="site_img/pm25.png"/>
 	</div>
 	
 	
-	
-	<div class='firstwrapper'>
-		 <img src="site_img/1.png" class="bimg1">
-		<!-- <img src="site_img/pm2.5.png" class="pm25"> -->
-		 
-		 <nav class="P1">
-			 <p>Days of heavy smog shrouding swathes of northern China pushed pollution to more than 20 times safe levelsy, despite government promises to tackle environmental blight. Visibility dropped dramatically as measures of small pollutant particles known as PM2.5, which can embed themselves deep in the lungs, reached more than 500 micrograms per cubic metre in parts of Hebei, a province bordering Beijing. The World Health Organization&prime;s guideline for maximum healthy exposure is 25.
-			 </p>
-		 </nav>
+<!-- page 1 -->
+	<div id="page1" class="page full-page">
+		<!-- background div -->
+		<div class="background_image scroller" style="background-image:url(site_img/pg1_bg.png);"></div>
+		<!-- text div-->
+		<div class="text text1 scroller arrived">
+			<p>Days of heavy smog shrouding swathes of northern China pushed pollution to more than 20 times safe levelsy, despite government promises to tackle environmental blight. Visibility dropped dramatically as measures of small pollutant particles known as PM2.5, which can embed themselves deep in the lungs, reached more than 500 micrograms per cubic metre in parts of Hebei, a province bordering Beijing. The World Health Organization&prime;s guideline for maximum healthy exposure is 25.</p>
+		</div>
 	</div>
-	
-	<div class='secondwrapper'>
-	 <img src="site_img/2.png" class="bigmonster">
-	 	<nav class="P2">
-			<h1>What is Particulate Matter(PM2.5)?</h1>
-				<p>There are things floating around in the air. Most of them, you cannot even see. They are a kind of air pollution called particles or particulate matter.In fact, particulate matter may be the air pollutant that most commonly affects people's health.
-			</p>
-		</nav>
-			 
-	</div>
-	
-	<div class='thirdwrapper'>
-	 <img src="site_img/3.png" class="bimg3">
-	 
-	 	<nav class="P3">
-			<h1>How can PM2.5 affect my health?</h1>
-				<p>Particles in the PM2.5 size range are able to travel deeply into the respiratory tract, reaching the lungs. Exposure to fine particles can cause short-term health effects such as eye, nose, throat and lung irritation, coughing, sneezing, runny nose and shortness of breath. Exposure to fine particles can also affect lung function and worsen medical conditions such as asthma and heart disease. Scientific studies have linked increases in daily PM2.5 exposure with increased respiratory and cardiovascular hospital admissions, emergency department visits and deaths. 
-			</p>
-		</nav>	 
-	</div>
-	
-	<div class='fourthwrapper'>
-	 <img src="site_img/4.png" class="car">
-	 <img src="site_img/41.png" class="bimg4">
-	 	<nav class="P4">
-			<h1>Where does PM2.5 come from?</h1>
-				<p>There are outdoor and indoor sources of fine particles. Outside, fine particles primarily come from car, truck, bus and off-road vehicle exhausts, other operations that involve the burning of fuels such as wood, heating oil or coal and natural sources such as forest and grass fires. Fine particles also form from the reaction of gases or droplets in the atmosphere from sources such as power plants. 
-			</p>
-		</nav>	 
-	</div>
-	
-	<div class='fifthwrapper'>
-	 <img src="site_img/51.png" alt="bimg5">
-	 	<nav class="P5">
-			<h1>What can I do to reduce my exposure to fine particle pollution when levels are extremely high?</h1>
-				<p>1.Stay indoors in an area with filtered air.<br>2.Air cleaners that remove particles include high-efficiency mechanical filters and electronic air cleaners<br>3. Keep your activity levels low.</p>
-		</nav>
+
+<!-- page 2 -->
+	<div id="page2" class="page full-page">  <!-- background color: gray -->
+		<!-- dust div -->
+		<div class="dust scroller" data-rate="300">
+			<img src="site_img/pg2_dust.png" height=140% width=90%/>
+		</div>
 		
+		<!-- text div -->
+	 	<div class="text text2 scroller arrived">
+			<h1>What is Particulate Matter(PM2.5)?</h1>
+			<p>There are things floating around in the air. Most of them, you cannot even see. They are a kind of air pollution called particles or particulate matter.In fact, particulate matter may be the air pollutant that most commonly affects people's health.</p>
+		</div>
+	</div>
+
+<!-- page 3 -->	
+	<div id="page3" class="page full-page">
+		<!-- background div -->
+		<div class="background_image scroller" style="background-image:url(site_img/pg3_bg.png);"></div>
+		
+		<!-- text div -->
+	 	<div class="text text3 scroller arrived">
+			<h1>How can PM2.5 affect my health?</h1>
+			<p>Particles in the PM2.5 size range are able to travel deeply into the respiratory tract, reaching the lungs. Exposure to fine particles can cause short-term health effects such as eye, nose, throat and lung irritation, coughing, sneezing, runny nose and shortness of breath. Exposure to fine particles can also affect lung function and worsen medical conditions such as asthma and heart disease. Scientific studies have linked increases in daily PM2.5 exposure with increased respiratory and cardiovascular hospital admissions, emergency department visits and deaths.</p>
+		</div>
 	</div>
 	
+<!-- page 4 -->
+	<div id="page4" class="page full-page">
+		<!-- background div -->
+		<div class="background_image scroller" style="background-image:url(site_img/pg4_bg.png);"></div>
+		
+		<!-- car div -->
+		<div class="car">
+			<img src="site_img/pg4_car.png"/>
+		</div>
+		
+		<!-- text div -->
+	 	<div class="text text4 scroller arrived">
+			<h1>Where does PM2.5 come from?</h1>
+			<p>There are outdoor and indoor sources of fine particles. Outside, fine particles primarily come from car, truck, bus and off-road vehicle exhausts, other operations that involve the burning of fuels such as wood, heating oil or coal and natural sources such as forest and grass fires. Fine particles also form from the reaction of gases or droplets in the atmosphere from sources such as power plants.</p>
+		</div>
+	</div>
 	
+<!-- page 5 -->
+	<div id="page5" class="page full-page">
+		<!-- background div -->
+		<div class="background_image scroller" style="background-image:url(site_img/pg5_bg.png);"></div>
+		
+		<!-- text div -->
+	 	<div class="text text5 scroller arrived">
+			<h1>What can I do to reduce my exposure to fine particle pollution when levels are extremely high?</h1>
+			<p>1.Stay indoors in an area with filtered air.<br>2.Air cleaners that remove particles include high-efficiency mechanical filters and electronic air cleaners<br>3. Keep your activity levels low.</p>
+		</div>
+	</div>
+
+
+
+
+<!--java script-->
+
+	<script>
+		$(".scroller").scrollFlight();
+		
+	/******** text appear ********/
+		$(".text").on("arrived",function() {
+			$(this).addClass("arrived");
+	  	});
+		
+	/********* car moving ********/
+		$("#page5").on("update",function(e,reveal) {
+		    if($(this).flightState() != "off") {
+		    	$(".car").css({ transform: "translateX(" + (reveal * 100 ) + "vw)" });
+		    }
+		});
+		
+		
+	/********* PM2.5 moving *******/
+		$(".page").on("update",function(e,reveal) {
+			if($(this).flightState() != "off") {
+			    $(".PM25").css({ transform: "translateY(" + (reveal * 150) + "vw)" });
+			}
+		});
+
+	</script>
+		
 </body>
+
 </html>
