@@ -80,65 +80,71 @@ h1{font-size:1.2em;
 
 /************1***********/
 .firstwrapper{
+	position:relative;
 	background-color:#FFFFFF;
 	width: 100%;
-	height:50em;
+	height:100vh;
 	z-index:100;
 }
 
 .secondwrapper{background-color:#A6B2B2;
+	position:relative;
 	width: 100%;
-	height:50em;
+	height:100vh;
 	z-index:100;
 }
 .thirdwrapper{
 	background-color:#567F4E;
+	position:relative;
 	width: 100%;
-	height:50em;
+	height:100vh;
 	z-index:100;
 }
 
 .fourthwrapper{background-color:#FFFFFF;
+	position:relative;
 	width: 100%;
-	height:50em;
+	height:100vh;
 	z-index:100;
 }
 .fifthwrapper{background-color:#567F4E;
+	position:relative;
 	width: 100%;
-	height:50em;
+	height:100vh;
 	z-index:100;
 }
 
 
 
 .bimg1{
-	width:100%;
+	width:180vh;
 	float:left;
-	margin-left:1.25em;
-	margin-top:-6.25em;
+	margin-left:5vh;
+	margin-top:-23vh;
 	z-index:0;
 }
 
 .bimg3{
-	width:100%;
+	width:160vh;
 	float:left;
-	margin-top:-6.25em;
+	margin-top:-46.9vh;
 	z-index:0;
 }
 
 .bimg4{
-	width:100%;
+	width:260vh;
 	float:left;
-	margin-left:1.25em;
-	margin-top:-6.25em;
+	margin-left:26vh;
+	margin-top:-46vh;
 	z-index:0;
 }
 
+
 .bimg5{
-	width:102%;
+	width:260vh;
 	float:left;
-	margin-left:1.25em;
-	margin-top:-6.25em;
+	margin-left:10vh;
+	
 	z-index:0;
 }
 
@@ -156,8 +162,8 @@ h1{font-size:1.2em;
 
 .P1{
 	position:absolute;
-	margin:20em 45em;
-	width:26em;
+	margin:40vh 110vh;
+	width:50vh;
 	z-index:100;
 }
   
@@ -167,17 +173,17 @@ h1{font-size:1.2em;
 /************2***********/
 
 .bigmonster{
-	width:108%;
-	margin-left:10em;
-	margin-top:-15em;
+	width:200vh;
+	margin-left:20vh;
+	margin-top:-48vh;
 	z-index:0;
 }
 
 
 .P2{
-	margin:26.5em 42em;
-	margin-top:-33em;
-	width:23em;
+	margin-left: 100vh;
+	margin-top:120vh;
+	width:82vh;
 	z-index:100;
 }
 
@@ -190,8 +196,8 @@ h1{font-size:1.2em;
 
 .P3{
 	position:absolute;
-	margin:18em 48em;
-	width:24em;
+	margin:44vh 179vh;
+	width:80vh;
 	z-index:100;
 }
 
@@ -199,23 +205,29 @@ h1{font-size:1.2em;
 
 
 .car{
-	width:110%;
+	width:300vh;
 	position:absolute;
-	margin-left:-110em;
-	margin-top:0em;
-	z-index:0;}
+	margin-left:-400vh;
+	margin-top:-40vh;
+	z-index:0;
 	
 }
 
 .P4 {position:absolute;
-margin:20em 45em;
-width:26em;
+margin:44vh 170vh;
+width:80vh;
 z-index:100;
 }
 
 /************4***********/
 
 .P5 {position:absolute;
+margin:75vh 150vh;
+width:86vh;
+z-index:100;
+}
+
+.P6 {position:absolute;
 margin:20em 45em;
 width:26em;
 z-index:100;

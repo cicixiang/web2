@@ -3,11 +3,12 @@ function showModal(video){
 		$(".modal").empty();
 	
   var title = video.snippet.title;
-  var thumbnail = video.snippet.description;
+  var description = video.snippet.description;
   
   var $div = $("<div>"),addClass("video");
+  var videoId = video.id.videoId;
   
-  var $title = $("<h4>").text(title);
+  var $title = $("<h4>")
   var $image = $("<p>").text(description);
   
   $div.append($image).append($description);
