@@ -15,9 +15,10 @@
 		<div id='filter-bar'>
 			<input type='text' id='search' placeholder='search'/>
     		<button data-category=""      class='category selected' id="all-button">All</button>
-			<button data-category="year2013"   class='category'>2013</button>
-			<button data-category="year2014"   class='category'>2014</button>
-			<button data-category="year2015"   class='category'>2015</button>
+			<button data-category="Bird"   class='category'>bird</button>
+			<button data-category="Cat"   class='category'>cat</button>
+			<button data-category="Dog"   class='category'>dog</button>
+			<button data-category="Rabbit"   class='category'>rabbit</button>
 		</div>
 	<!--/div-->
 
@@ -38,7 +39,7 @@
 		
 		var $h1 = $("<h1>").text(item.Name);
 		var $img = $("<img>").attr("src",item.Image);
-		var $p = $("<p>").text(item.Description);
+		var $p = $("<p>").text(item.Bio);
 		
 		$(".modal").append($h1,$img,$p);
 		$(".overlay").show();
@@ -54,13 +55,13 @@
 	
 /************ Draw List View ************/
 	function addItem(item) {
-		var $li = $("<li>").addClass("item").addClass(item.Year);
+		var $li = $("<li>").addClass("item").addClass(item.Animal);
 
-		$li.attr("data-category",item.Year);
+		$li.attr("data-category",item.Animal);
 		
 
 		var $h2 = $("<h2 class='name'>").text(item.Name);  
-		var $p = $("<p class='description'>").text(item.Description);
+		var $p = $("<p class='description'>").text(item.Bio);
 	
 		$li.append($h2,$p);
 
@@ -130,7 +131,7 @@
 
 /*******************************************/
 	
-	Tabletop.init( { key: "https://docs.google.com/spreadsheets/d/1cR14Rbbs9-g004UFbXQA50R2dAfr685_cfqwAgWg_Ok/edit?usp=sharing",
+	Tabletop.init( { key: "https://docs.google.com/spreadsheets/d/1RjgdfPvprRCI-hMVVWIc2lymPvDiPUjpS-htVJYfDZ4/pubhtml",
                    callback: callback,
                    simpleSheet: true } )
 

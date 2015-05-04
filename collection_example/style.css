@@ -7,6 +7,10 @@ body {
   margin: 0 20px;
 }
 
+.image {
+	position:relative;
+	width:;
+}
 
 #filter-bar-wrapper {
   height:50px;
@@ -39,55 +43,30 @@ body {
 #search  {
   padding:5px;
 }
-
+/******************
 .item {
-
   width: 200px;
   list-style-type:none;
- background-color:brown;
+
+  background-color:brown;
   padding:20px;
   float:left;
   cursor:pointer;
   border-radius:5px;
-
 }
 
-/*********** categories *************/
-
-.year2013 { 
+.red { 
   background-color:red;
 }
 
-.year2014 { 
-  background-color: orange;
+.blue { 
+  background-color: lightblue;
 }
 
-.year2015 {
-  background-color:green;
+.purple {
+  background-color:purple;
 }
-
-/****** Tess *****/
-
-.Bird { 
-  background-color:red;
-}
-
-.Cat { 
-  background-color: orange;
-}
-
-.Dog {
-  background-color:green;
-}
-
-.Rabbit {
-	backgroud-color:purple;;
-}
-
-
-
-/*****************/
-
+*************************************/
 .item-big { width: 300px; }
 
 
