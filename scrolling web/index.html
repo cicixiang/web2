@@ -5,7 +5,7 @@
 	<title>The harm of PM 2.5</title>
 	<link rel="stylesheet" href="style.css" />
 	<script src="https://code.jquery.com/jquery-2.1.3.js"></script>
-	<script src="scroll_flight.js"></script>
+	<script src="http://cykod.github.io/ScrollFlight/scroll_flight.js"></script>
 </head>
 
 <body>
@@ -16,46 +16,45 @@
 	</div>
 	
 	
-<!-- page 1 -->
-	<div id="page1" class="page full-page">
-		<!-- background div -->
-		<div class="background_image scroller" style="background-image:url(site_img/pg1_bg.png);"></div>
+<!------------------------------------------------------ page 1 ------------------------------------------------------>
+	<div id="page1" class="page image_background" style="background-image:url(site_img/pg1_bg.png);">
+		
 		<!-- text div-->
-		<div class="text text1 scroller arrived">
-			<p>Days of heavy smog shrouding swathes of northern China pushed pollution to more than 20 times safe levelsy, despite government promises to tackle environmental blight. Visibility dropped dramatically as measures of small pollutant particles known as PM2.5, which can embed themselves deep in the lungs, reached more than 500 micrograms per cubic metre in parts of Hebei, a province bordering Beijing. The World Health Organization&prime;s guideline for maximum healthy exposure is 25.</p>
-		</div>
+		<div id="text1" class="text scroller arrived">
+			<b>Days of heavy smog shrouding swathes of northern China pushed pollution to more than 20 times safe levelsy, despite government promises to tackle environmental blight. Visibility dropped dramatically as measures of small pollutant particles known as PM2.5, which can embed themselves deep in the lungs, reached more than 500 micrograms per cubic metre in parts of Hebei, a province bordering Beijing. The World Health Organization&prime;s guideline for maximum healthy exposure is 25.</b></div>
 	</div>
 
-<!-- page 2 -->
-	<div id="page2" class="page full-page">  <!-- background color: gray -->
+<!------------------------------------------------------ page 2 -------------------------------------------------------->
+	<div id="page2" class="page white_page">  <!-- background color: gray -->
 		<!-- dust div -->
-		<div class="dust scroller" data-rate="300">
-			<img src="site_img/pg2_dust.png" height=140% width=90%/>
+		<div class="windows" data-rate="300">
+			<img src="site_img/pg2_dust.png" width=160%/>
 		</div>
 		
 		<!-- text div -->
-	 	<div class="text text2 scroller arrived">
+	 	<div id="text2" class="text scroller arrived">
 			<h1>What is Particulate Matter(PM2.5)?</h1>
 			<p>There are things floating around in the air. Most of them, you cannot even see. They are a kind of air pollution called particles or particulate matter.In fact, particulate matter may be the air pollutant that most commonly affects people's health.</p>
 		</div>
 	</div>
 
-<!-- page 3 -->	
-	<div id="page3" class="page full-page">
-		<!-- background div -->
-		<div class="background_image scroller" style="background-image:url(site_img/pg3_bg.png);"></div>
+<!------------------------------------------------------- page 3 -------------------------------------------------------->	
+	<div id="page3" class="page image_background update" style="background-image:url(site_img/pg3_bg.png);">
 		
 		<!-- text div -->
-	 	<div class="text text3 scroller arrived">
+	 	<div id="text3" class="text scroller arrived">
 			<h1>How can PM2.5 affect my health?</h1>
 			<p>Particles in the PM2.5 size range are able to travel deeply into the respiratory tract, reaching the lungs. Exposure to fine particles can cause short-term health effects such as eye, nose, throat and lung irritation, coughing, sneezing, runny nose and shortness of breath. Exposure to fine particles can also affect lung function and worsen medical conditions such as asthma and heart disease. Scientific studies have linked increases in daily PM2.5 exposure with increased respiratory and cardiovascular hospital admissions, emergency department visits and deaths.</p>
 		</div>
 	</div>
 	
-<!-- page 4 -->
-	<div id="page4" class="page full-page">
-		<!-- background div -->
-		<div class="background_image scroller" style="background-image:url(site_img/pg4_bg.png);"></div>
+<!------------------------------------------------------ page 4 ------------------------------------------------------>
+	<div id="page4" class="page white_page">
+		
+		<!-- windows div -->
+		<div class="windows" data-rate="300">
+			<img src="site_img/pg4_windows.png" width=160%/>
+		</div>
 		
 		<!-- car div -->
 		<div class="car">
@@ -63,19 +62,23 @@
 		</div>
 		
 		<!-- text div -->
-	 	<div class="text text4 scroller arrived">
+	 	<div id="text4" class="text scroller arrived">
 			<h1>Where does PM2.5 come from?</h1>
 			<p>There are outdoor and indoor sources of fine particles. Outside, fine particles primarily come from car, truck, bus and off-road vehicle exhausts, other operations that involve the burning of fuels such as wood, heating oil or coal and natural sources such as forest and grass fires. Fine particles also form from the reaction of gases or droplets in the atmosphere from sources such as power plants.</p>
 		</div>
 	</div>
 	
-<!-- page 5 -->
-	<div id="page5" class="page full-page">
-		<!-- background div -->
-		<div class="background_image scroller" style="background-image:url(site_img/pg5_bg.png);"></div>
+<!--------------------------------------------------------- page 5 ------------------------------------------------------>
+	<div id="page5" class="page white_page">
+		
+		<!-- windows div -->
+		<div class="windows" data-rate="300">
+			<img src="site_img/pg5_windows.png" width=160%/>
+		</div>
+		
 		
 		<!-- text div -->
-	 	<div class="text text5 scroller arrived">
+	 	<div id="text5" class="text scroller arrived">
 			<h1>What can I do to reduce my exposure to fine particle pollution when levels are extremely high?</h1>
 			<p>1.Stay indoors in an area with filtered air.<br>2.Air cleaners that remove particles include high-efficiency mechanical filters and electronic air cleaners<br>3. Keep your activity levels low.</p>
 		</div>
@@ -94,18 +97,21 @@
 			$(this).addClass("arrived");
 	  	});
 		
+		
+		
 	/********* car moving ********/
 		$("#page5").on("update",function(e,reveal) {
 		    if($(this).flightState() != "off") {
-		    	$(".car").css({ transform: "translateX(" + (reveal * 100 ) + "vw)" });
+		    	$(".car").css({ transform: "translateX(" + ((reveal) * 100 ) + "vw)" });
 		    }
 		});
 		
 		
-	/********* PM2.5 moving *******/
+		
+		/********* PM2.5 moving *******/
 		$(".page").on("update",function(e,reveal) {
 			if($(this).flightState() != "off") {
-			    $(".PM25").css({ transform: "translateY(" + (reveal * 150) + "vw)" });
+			    $(".PM25").css({ transform: "translateY(" + (reveal * 365) + "vh" });
 			}
 		});
 
