@@ -10,6 +10,7 @@ body { font-family: Times; }
 .page {
   position:relative;
   overflow:hidden;
+<<<<<<< HEAD
   transition:background-color 2s linear;
 }
 
@@ -68,10 +69,55 @@ body { font-family: Times; }
 	left:61vw;
 	top:30vh;
 	width:30vw;
+=======
+  background-color:white;
+  transition:background-color 2s linear;
+}
+
+
+.full-page {
+  background-size:cover;
+  background-repeat: no-repeat;
+  width:100%;
+  height:100vh
+}
+
+#page2 { background-color:#A6B2B2;}
+#page3 { background-color:#567F4E;}
+#page5 { background-color:#567F4E;}
+
+.background_image {
+  background-size:cover;
+  background-position:50% 50%;
+  background-repeat: no-repeat;
+  width:100%;
+  height:100vh
+}
+
+
+/*moving flag*/
+.PM25{
+	width:100%;
+	position:absolute;
+	margin-left:12vw;
+	margin-top:49vh;
+	z-index:200;
+}
+
+
+
+/*page 1*/
+.text1{
+	position:absolute;
+	left:60%;
+	top:40%;
+	width:50vh;
+>>>>>>> master
 	z-index:100;
 }
 
 
+<<<<<<< HEAD
 #text2{
 	position:absolute;
 	left:60vw;
@@ -101,12 +147,67 @@ body { font-family: Times; }
 	left:59vw;
 	top:35vh;
 	width:32vw;
+=======
+/*page2*/
+.text2{
+	position:absolute;
+	left:60%;
+	top:40%;
+	width:50vh;
+	z-index:100;
+}
+
+.dust{
+	position:absolute;
+	left:23%;
+	top:-30%;
+	width:200vh;
+	z-index:0;
+}
+
+
+/*page3*/
+.text3{
+	position:absolute;
+	left:63%;
+	top:35%;
+	width:50vh;
+	z-index:100;
+}
+
+
+/*page4*/
+.text4{
+	position:absolute;
+	left:58%;
+	top:38%;
+	width:50vh;
+	z-index:100;
+}
+
+.car{
+	position:absolute;
+	left:0vw;
+	top:70vh;
+	width:200vw;
+	z-index:0;
+}
+
+
+/*page5*/
+.text5{
+	position:absolute;
+	left:58%;
+	top:33%;
+	width:50vh;
+>>>>>>> master
 	z-index:100;
 }
 
 
 /* share text setting*/
 
+<<<<<<< HEAD
 b{ font-size:1.1em;
 	font-family: 'Lato', sans-serif;
 	color:white;
@@ -116,6 +217,18 @@ b{ font-size:1.1em;
 }
 	
 p { font-size:1em;
+=======
+.text{ 
+	opacity: 0;
+	transition: opacity 2s ease;
+}
+
+.text.arrived{
+	opacity: 1;
+}
+	
+p { font-size:0.9em;
+>>>>>>> master
 	font-family: 'Lato', sans-serif;
 	color:white;
 	text-decoration:none;
@@ -131,6 +244,7 @@ h1 { font-size:1.2em;
 	 text-align:center;
 }
 
+<<<<<<< HEAD
 
 /*moving flag*/
 .PM25{
@@ -149,3 +263,5 @@ h1 { font-size:1.2em;
 	z-index:0;
 }
 
+=======
+>>>>>>> master
